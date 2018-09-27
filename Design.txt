@@ -1,0 +1,134 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid101\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid201\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid301\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid401\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww15720\viewh12760\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Simon Says Design\
+\
+SimonSays\
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8259 	}SimonSays
+\b0  holds the default buttons, 
+\b sequence
+\b0 , 
+\b clickMode
+\b0 , 
+\b random generator
+\b0 , and a 
+\b temporary sequence
+\b0 .\
+{\listtext	\uc0\u8259 	}
+\b clickMode 
+\b0 tells whether or not the user is allowed to enter the given sequence in the game\
+{\listtext	\uc0\u8259 	}The 
+\b temporary sequence
+\b0  holds what is left of the pattern to be displayed or entered in the game.\
+{\listtext	\uc0\u8259 	}The
+\b  random generator
+\b0  creates the new number to be added to sequence.\
+{\listtext	\uc0\u8259 	}SimonSays also creates the 
+\b scene
+\b0  for the game. \
+{\listtext	\uc0\u8259 	}An 
+\b onTick
+\b0  method allows the display for the buttons to change for the sequence portion and the click portion of the game. \
+{\listtext	\uc0\u8259 	}An 
+\b onMousePressed
+\b0  method is used to show that when it\'92s the user\'92s turn to input the pattern the display of the buttons will change based on what they press.\
+{\listtext	\uc0\u8259 	}An
+\b  onMouseReleased
+\b0  is used to reset the display of the button so that the user can enter the next button of the pattern or so it is clear the user what the next button of the pattern is.\
+{\listtext	\uc0\u8259 	}The method 
+\b Darken
+\b0  is used to signify to the user what button is being pressed\
+{\listtext	\uc0\u8259 	}The method 
+\b pause
+\b0  allows a between the showing of sequences for the user so they can distinguish between two different presses of the same color\
+{\listtext	\uc0\u8259 	}The method 
+\b resetTemp
+\b0  is used for when the user has finished the stage and needs to be given the new sequence along with the new temporary sequence.\
+{\listtext	\uc0\u8259 	}The method 
+\b Next
+\b0  moves the temporary sequence on to the next sequence that needs to be performed after a button has been pressed.\
+{\listtext	\uc0\u8259 	}The method 
+\b switchMode
+\b0  changes the 
+\b clickMode
+\b0  of 
+\b SimonSays
+\b0  from its current state.\
+{\listtext	\uc0\u8259 	}The method 
+\b addToSequence
+\b0  creates the new sequence for the next stage after the user has completed the current stage.\
+{\listtext	\uc0\u8259 	}The method 
+\b resetButtons
+\b0  resets the state of the buttons to its original appearance.\
+{\listtext	\uc0\u8259 	}The method 
+\b nextColor
+\b0  abstract the random number generator\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 \
+Button\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0
+\b0 \cf0 {\listtext	\uc0\u8259 	}The method 
+\b draw
+\b0 , draws the buttons as squares.\
+{\listtext	\uc0\u8259 	}The method 
+\b clicked
+\b0  changes the display of the buttons darker when clicked. 
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Utils\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 {\listtext	\uc0\u8259 	}
+\b0 contains the 
+\b default game size, speed, and buttons
+\b0 .
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ConsLoInt\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf0 {\listtext	\uc0\u8259 	}ConsLoInt
+\b0  is used for the pattern that must be shown to and entered by the user.\
+\ls4\ilvl0
+\b {\listtext	\uc0\u8259 	}rightButton
+\b0  is used to determine that the button that is pressed is the correct button needed in the sequence. \
+{\listtext	\uc0\u8259 	}
+\b addToEnd
+\b0  adds the new button to be pressed to the end of the sequence.\
+{\listtext	\uc0\u8259 	}
+\b changeFirst
+\b0  changes the first number into whatever number we need it to be, in our case \'930\'94 so that the pause method works.\
+{\listtext	\uc0\u8259 	}
+\b next
+\b0  gives the rest of the list to be displayed/entered.
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 MtLoInt\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls5\ilvl0\cf0 {\listtext	\uc0\u8259 	}The
+\b0  method 
+\b rightButton
+\b0  returns false when there is no buttons left to press in the sequence.\
+{\listtext	\uc0\u8259 	}The method 
+\b addToEnd
+\b0  adds the new button to be pressed to the end of the sequence.\
+{\listtext	\uc0\u8259 	}The 
+\b changeFirst
+\b0  method returns itself.\
+{\listtext	\uc0\u8259 	}The 
+\b next 
+\b0 method returns itself.
+\b \
+}
